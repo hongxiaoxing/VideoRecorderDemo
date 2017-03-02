@@ -189,7 +189,7 @@ public class VideoManage implements MediaRecorder.OnErrorListener, MediaRecorder
         mCamera = Camera.open(Camera.CameraInfo.CAMERA_FACING_FRONT );
         //调用前摄像头时，需要设置摄像头的参数
         Camera.Parameters parameters = mCamera.getParameters();
-        mCamera.setDisplayOrientation(0);//竖屏90
+        mCamera.setDisplayOrientation(0);//竖屏90  横屏0  设置录像的角度
         mCamera.setParameters(parameters);
         mCamera.setPreviewDisplay(mSurfaceHolder);
         mCamera.startPreview();
